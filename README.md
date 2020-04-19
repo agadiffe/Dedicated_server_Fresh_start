@@ -1,8 +1,6 @@
 # Dedicated server Fresh start
 basic security & conf: see server & client side section
 
-Setting Up a Basic Firewall: ufw
-
 ## connection
 ```
 ssh root@YourServer -p YourPort
@@ -74,7 +72,9 @@ PubkeyAuthentication yes
 AuthorizedKeysFile .ssh/authorized_keys  
 PasswordAuthentication no  
 ```
-
+```
+alias sudo='sudo ' >> .zshrc # make alias work with sudo
+```
 
 ## client side
 ```
@@ -85,3 +85,9 @@ Host kimsufi
 	Port YourPort
 	IdentityFile ~/.ssh/YourPrivateSshKey
 ```
+
+## Setting Up a Basic Firewall
+ufw
+
+## new user
+use ```/etc/skel/```. Anything you shove in there will be copied out to a new user profile when you create them.
