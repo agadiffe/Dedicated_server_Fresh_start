@@ -1,5 +1,6 @@
 # Dedicated server Fresh start
 basic security & conf: see server & client side section
+
 Setting Up a Basic Firewall: ufw
 
 ## connection
