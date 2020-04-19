@@ -91,3 +91,5 @@ ufw
 
 ## new user
 use ```/etc/skel/```. Anything you shove in there will be copied out to a new user profile when you create them.
+
+In its simplest form when used without any option, useradd will create a new user account with the default settings specified in the ```/etc/default/useradd``` file. # change default shell by example
